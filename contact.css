@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #f1f1f1;
+    --primary: #db7525;
+
+}
+
+
+h1, h2 {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+    color: var(--primary);
+}
+
+.contacticons h2 a {
+    text-decoration: none;
+font-size: 3em;
+color: var(--primary);
+background-color: var(--bg-color);
+margin: 2em;
+}
+
+.mymap {
+    margin: 200;
+    border: 5px solid navy;
+
+}
