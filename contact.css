@@ -7,6 +7,7 @@
 :root {
     --bg-color: #f1f1f1;
     --primary: #db7525;
+    --navy: #000080;
 
 }
 
@@ -20,15 +21,29 @@ h1, h2 {
 }
 
 .contacticons h2 a {
-    text-decoration: none;
+text-decoration: none;
 font-size: 3em;
 color: var(--primary);
 background-color: var(--bg-color);
 margin: 2em;
 }
 
-.mymap {
+div {
+    display: flex;
+    justify-content: center;
+}
+
+#mymap {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     margin: 200;
-    border: 5px solid navy;
+    border: 5px solid var(--navy);
 
 }
+  div h2 a {
+    padding: 50px;
+    border: 10px solid var(--navy);
+    border-radius: 20px;
+    font-size: 1em;
+ }
