@@ -12,12 +12,26 @@
 }
 
 body {
-    background-image: url(./Images/foodinwarehouse.webp);
-    
-}
+    background-color: var(--bg-color);
+  }
+  
 
 
-h1, h2 {
+h1 {
+    font-size: 3rem;
+  }
+  
+   /* GCA logo links to home page */
+img {
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        padding: 5px;
+        width: 150px;
+   }
+  
+  
+h2 {
+    font-size: 3rem;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -25,13 +39,34 @@ h1, h2 {
     color: var(--primary);
 }
 
-.contacticons h2 a {
-text-decoration: none;
-font-size: 3em;
-color: var(--primary);
-background-color: var(--bg-color);
-margin: 2em;
-}
+.contacticons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+  }
+  
+  .contacticons h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+  }
+  
+  .contacticons h2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    color: var(--primary);
+    background-color: var(--bg-color);
+    margin: 0.5em;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+  }
+  
 
 div {
     display: flex;
@@ -39,16 +74,21 @@ div {
     justify-content: center;
 }
 
+/* trying to center map */
+
 #mymap {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-self: center;
-    margin: 20px;
-    border: 5px solid var(--navy);
-    background: red;
-}
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    margin: 2em 0;
+  }
+  
+ 
   div h2 a {
-    padding: 50px;
+    padding: 10px;
     border: 10px solid var(--navy);
     border-radius: 20px;
     font-size: 1em;
@@ -59,4 +99,11 @@ div {
     justify-content: center;
     font-size: 3rem;
     text-emphasis: bold;
+ }
+
+ /* probably need new image and some text info here. Maybe also some .  */
+ .image {
+    background-image: url(./Images/foodinwarehouse.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
  }
